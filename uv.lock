@@ -518,11 +518,15 @@ name = "mytween"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "typing-extensions" },
     { name = "zenml", extra = ["local"] },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "zenml", extras = ["local"], specifier = ">=0.97.0" }]
+requires-dist = [
+    { name = "typing-extensions", specifier = ">=4.16.0" },
+    { name = "zenml", extras = ["local"], specifier = ">=0.97.0" },
+]
 
 [[package]]
 name = "opentelemetry-api"
